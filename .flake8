@@ -1,0 +1,21 @@
+[flake8]
+max-line-length = 100
+extend-ignore =
+    # line break before binary operator (Black style)
+    W503,
+    # whitespace before ':' (Black style)
+    E203
+exclude =
+    .git,
+    __pycache__,
+    .venv,
+    venv,
+    build,
+    dist,
+    data,
+    *.egg-info
+per-file-ignores =
+    # broad-except is intentional in the scraper for network resilience
+    scraper/scraper.py: BLE001
+    # broad-except is intentional in main.py for top-level error handling
+    main.py: BLE001

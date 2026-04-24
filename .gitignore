@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Pytest / coverage
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Generated pipeline output (keep the directory, ignore the files)
+data/output/*.csv
+data/output/*.png
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# macOS
+.DS_Store
